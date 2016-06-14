@@ -1,0 +1,5 @@
+rootProject.name = 'benny-blog'
+include 'ttc-core'
+include 'ttc-mybatis-generator'
+include 'ttc-util'
+
