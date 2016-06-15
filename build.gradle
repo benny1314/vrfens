@@ -14,45 +14,7 @@ subprojects {
     }
 
     dependencies {
-        /*log-back的依赖*/
-        compile group: 'ch.qos.logback', name: 'logback-classic', version: '1.1.7'
-        compile group: 'ch.qos.logback', name: 'logback-core', version: '1.1.7'
-        compile(
-                'commons-logging:commons-logging:1.2',
-                'org.springframework:spring-aop:4.2.4.RELEASE',
-                'org.springframework:spring-beans:4.2.4.RELEASE',
-                'org.springframework:spring-context:4.2.4.RELEASE',
-                'org.springframework:spring-core:4.2.4.RELEASE',
-                'org.springframework:spring-expression:4.2.4.RELEASE',
-                'org.springframework:spring-web:4.2.4.RELEASE',
-                'org.springframework:spring-webmvc:4.2.4.RELEASE',
-                'org.springframework:spring-tx:4.2.4.RELEASE',
-                'org.springframework:spring-jdbc:4.2.4.RELEASE',
-                /*安全限制框架shiro*/
-                'org.apache.shiro:shiro-web:1.2.4',
-                'org.apache.shiro:shiro-core:1.2.4',
-                'org.apache.shiro:shiro-spring:1.2.4',
-                /*阿里巴巴json*/
-                'com.alibaba:fastjson:1.2.7',
-                /*slf4j 接口*/
-                'org.slf4j:slf4j-api:1.7.14',
-                /*数据库连接池*/
-                'com.alibaba:druid:1.0.16',
-                /*mysql连接*/
-                'mysql:mysql-connector-java:5.1.38',
-                //mybatis
-                'org.mybatis:mybatis:3.3.0',
-                /*mybatis-spring*/
-                'org.mybatis:mybatis-spring:1.2.3',
-                /*后台校验*/
-                /*'org.bitbucket.cowwoc:preconditions:1.28'*/
 
-                /*spring 整合 redis*/
-                'org.springframework.data:spring-data-redis:1.7.1.RELEASE',
-                'redis.clients:jedis:2.8.1'
-
-        )
-        runtime("jstl:jstl:1.2")
     }
     //指定gradle的编码格式
     tasks.withType(JavaCompile) {
